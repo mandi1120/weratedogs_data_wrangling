@@ -7,42 +7,47 @@ Since 2015, WeRateDogs has been a source of humor and community for dog-lovers a
 
 The years of tweets accumulated by WeRateDogs provides a good base for an analysis of user activity. However, it also presents issues in data wrangling. This post will first focus on the insights gleaned from analysis after having spent many hours wrangling the data itself. It will then detail the technical steps taken to gather, assess, clean, and store the data through wrangling.  
   
-WeRateDogs brings joy to the internet and unites users worldwide in their appreciation of dogs. The love of the site can be revealed through the data and visualizations below. **15/10 would recommend** that you visit https://twitter.com/dog_rates.    
+WeRateDogs brings joy to the internet and unites users worldwide in their appreciation of dogs. The love of the site can be revealed through the data and visualizations below. **15/10 would recommend**     
 
-*WeRateDogs: Your Only Source For Professional Dog Ratings*
-
+*WeRateDogs: Your Only Source For Professional Dog Ratings*  
+https://twitter.com/dog_rates  
+<img src='https://pbs.twimg.com/profile_images/1730585319693492224/A-nCLXoh_400x400.jpg' width='100'>  
+    
+  
 ## Analysis  
   
 ### WeRateDogs Twitter Archive Insights for November 2015 to August 2018  
   
 From the bar chart below, we can see the breakout of tweets by day of the week. More tweets were tweeted earlier in the week than later in the week. Mondays had the most tweets, while Sundays had the least.  
-
-![Tweets by Day of Week]("images\day_of_week.png")
+  
+<img src='images/day_of_week.png' width='400'>    
  
 The “Dogtionary” categorizes the dogs into one of four stages: Doggo, Pupper, Puppo, or Floof. Unfortunately, the variable could not be identified for a large majority of the posts. Aside from the "Unknown" category, "pupper" had the most appearances with 229 tweets.
-
-![Tweets by Dog Stage]("images\dog_stage.png")
+  
+<img src='images/dog_stage.png' width='400'>  
   
 Looking at the trending counts of tweets, we can see the account’s rise to popularity early on in its existence. The tweets were at their highest at the end of 2015 going into 2016 but are trending downward as of August 2018.  
   
-![Tweet Trend by Month]("images\trend.png")
-
+<img src='images/trend.png' width='500'>  
+    
+  
 ## Data Wrangling Steps  
   
 ### Step 1: Gathering Data  
   
 The data used throughout this project were acquired from the following data sources using the methods noted:  
 1. WeRateDogs Twitter archive   
-  a. File: twitter-archive-enhanced.csv  
+  a. File: [twitter-archive-enhanced.csv](source_data/twitter-archive-enhanced.csv)  
   b. I downloaded the file from the “Step 1: Gathering Data” page in the Udacity course.  
 2. Tweet image predictions  
-  a. File: image_predictions.tsv  
+  a. File: [image_predictions.tsv](source_data/image_predictions.tsv), [image_predictions.csv](output_files/image_predictions.csv)  
   b. I downloaded the file programmatically in the Jupyter notebook using the python Requests library and this url.  
 3. Additional data from the Twitter API  
-  a. File: tweet-json.txt  
+  a. File: [tweet-json.txt](source_data/tweet-json.txt), [tweet_json.csv](output_files/tweet_json.csv)  
   b. In place of using the Twitter API, I downloaded this file from the “Additional Resource: Twitter API” page in the Udacity course.  
   
 After acquiring the files, I read each into a separate pandas dataframe. Because the image predictions and twitter API files were in .tsv and .txt formats, I also saved these dataframes to .csv files for easier review in Excel. 
+
   
 ### Step 2: Assessing Data  
   
@@ -75,7 +80,7 @@ Each of the data quality and tidiness issues were corrected through cleaning. Th
 
 ### Step 4: Storing Data
 
-The final master dataframe was saved to the file twitter_archive_master.csv.
+The final master dataframe was saved to the file [twitter_archive_master.csv](output_files/twitter_archive_master.csv).  
 
 ### Limitations
 
@@ -92,4 +97,5 @@ The data wrangling steps completed in this project did not solve all issues in t
 <br>
 <br>
 <br>
-<br><br>
+<br>
+<br>
