@@ -47,8 +47,9 @@ The data used throughout this project were acquired from the following data sour
   b. In place of using the Twitter API, I downloaded this file from the “Additional Resource: Twitter API” page in the Udacity course.  
   
 After acquiring the files, I read each into a separate pandas dataframe. Because the image predictions and twitter API files were in .tsv and .txt formats, I also saved these dataframes to .csv files for easier review in Excel. 
-
-  
+ 
+View the python code: [wrangle_act.ipynb](wrangle_act.ipynb)
+   
 ### Step 2: Assessing Data  
   
 Each of the three datasets were first assessed programmatically using the pandas dataframe.info() function. This function displays the column names, non-null value counts, data types and total entries for the dataframe.
