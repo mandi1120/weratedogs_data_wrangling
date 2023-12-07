@@ -32,7 +32,9 @@ Looking at the trending counts of tweets, we can see the account’s rise to pop
     
   
 ## Data Wrangling Steps  
-  
+
+View the python code here: [wrangle_act.ipynb](wrangle_act.ipynb)  
+
 ### Step 1: Gathering Data  
   
 The data used throughout this project were acquired from the following data sources using the methods noted:  
@@ -41,15 +43,13 @@ The data used throughout this project were acquired from the following data sour
   b. I downloaded the file from the “Step 1: Gathering Data” page in the Udacity course.  
 2. Tweet image predictions  
   a. File: [image_predictions.tsv](source_data/image_predictions.tsv), [image_predictions.csv](output_files/image_predictions.csv)  
-  b. I downloaded the file programmatically in the Jupyter notebook using the python Requests library and this url.  
+  b. I downloaded the file programmatically in the Jupyter notebook using the python Requests library and the provided url.  
 3. Additional data from the Twitter API  
   a. File: [tweet-json.txt](source_data/tweet-json.txt), [tweet_json.csv](output_files/tweet_json.csv)  
   b. In place of using the Twitter API, I downloaded this file from the “Additional Resource: Twitter API” page in the Udacity course.  
   
 After acquiring the files, I read each into a separate pandas dataframe. Because the image predictions and twitter API files were in .tsv and .txt formats, I also saved these dataframes to .csv files for easier review in Excel. 
-  
-View the python code: [wrangle_act.ipynb](wrangle_act.ipynb)  
-   
+     
 ### Step 2: Assessing Data  
   
 Each of the three datasets were first assessed programmatically using the pandas dataframe.info() function. This function displays the column names, non-null value counts, data types and total entries for the dataframe.
