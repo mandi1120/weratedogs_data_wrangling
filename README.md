@@ -11,7 +11,7 @@ WeRateDogs brings joy to the internet and unites users worldwide in their apprec
 
 *WeRateDogs: Your Only Source For Professional Dog Ratings*  
 https://twitter.com/dog_rates  
-<img src='https://pbs.twimg.com/profile_images/1730585319693492224/A-nCLXoh_400x400.jpg' width='100'>  
+<img width="150" alt="image" src="https://github.com/mandi1120/weratedogs_data_wrangling/assets/20828566/f567dd12-7c23-4ec8-ab8f-9b0f88b1cb1e">
     
   
 ## Analysis  
